@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+	
+	<!-- ul 자식으로는 li만 와야하지만 li 안에는 뭐가오든 상관 x -->
+	<!-- ul =  unorderlist -->
+<ul>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+</ul>
+<!-- 순서가 있을 경우엔 ul-> ol -->
+<!-- orderlist , type="" 에는 a,A,i(로마숫자)가 올수 있음-->
+<ol>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+</ol>
+<hr>
+<ul>
+	<li><a href="#">menu 1</a>
+		<ul>
+			<li><a href="#">submenu 1</a></li>
+			<li><a href="#">submenu 2</a></li>
+			<li><a href="#">submenu 3</a></li>
+			<li><a href="#">submenu 4</a></li>
+		</ul>
+	</li>
+	<li><a href="#">menu 2</a></li>
+	<li><a href="#">menu 3</a></li>
+	<li><a href="#">menu 4</a></li>
+</ul>
+<hr>
+<!-- dl 안에는 dt,dd 둘다 있어야함. dt->단어/제목 dd->설명/내용 -->
+<dl>
+	<!-- dt안에는 p같은 거 x -->
+	<dt><strong>Lorem ipsum dolor sit amet.</strong></dt>
+	<dd>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui facilis, dolorum laudantium veniam architecto facere reiciendis, labore exercitationem praesentium numquam expedita quibusdam. Quo unde eos rem hic, minus nesciunt.</p>
+	</dd>
+</dl>
+<!-- menu만들때 dl을 사용할 경우엔 submenu가 없는 경우에는 어색함. 쓰지 않음. -->
+<dl>
+	<dt>menu</dt>
+	<dd>
+		<ul>
+			<li><a href="#">submenu</a></li>
+			<li><a href="#">submenu</a></li>
+			<li><a href="#">submenu</a></li>
+		</ul>
+	</dd>
+</dl>
+
+
+</body>
+</html>
