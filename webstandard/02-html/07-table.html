@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+</head>
+<body>
+<!-- border -> 테두리 -->
+<table border>
+	<!-- tablerow -->
+	<tr>
+		<td>cell</td>
+		<td>cell</td>
+		<td>cell</td>
+		<td>cell</td>
+	</tr>
+</table>
+<table border width="100%">
+	<!-- caption 필수 -->
+	<caption>table caption</caption>
+	<colgroup>
+		<!-- 4개면 다 지정하지 말기. 하나는 지정 X -->
+		<col width="25%">
+		<col width="25%">
+		<col width="25%">
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<!-- th 에는 scope 필수 scope = col세로 | row가로 | colgroup | rowgroup -->
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="3">table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">result</th>
+			<td colspan="3">...</td>
+			<!-- <td>...</td>
+			<td>...</td> -->
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>
