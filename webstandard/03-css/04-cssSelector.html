@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector</title>
+	<style>
+	body{
+		color: #333;
+	}
+	a{
+		color: #888;
+		text-decoration: none;
+	}
+	a:hover, a:active, a:focus {
+		color: red;
+		text-decoration: underline;
+	}
+	.lead:first-line{
+		background-color: lime;
+	}
+	.lead:first-letter {
+		font-size: 5em;
+	}
+	h1:before{
+		content: "Before area ";
+		color: blue;
+	}
+	h1:after{
+		content: " After area";
+		color: red;
+	}
+	div{background-color: lime;} /*type, 1*/
+	.sample{background-color: green;} /*type, 10*/
+	#sample{background-color: purple;} /*type,100*/
+	/*인라인 스타일은 1000정도의 우선순위.*/
+	div{background-color: red !important;}/*!important, 무조건 적용되는 값*/
+	/* 순서 지켜주기
+	a:link{
+		color: green;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: gray;
+		text-decoration: underline;
+	}
+	a:hover{
+		color: red;
+		text-decoration: underline;
+	}
+	a:active {
+		color: orange;
+		text-decoration: underline;
+	}
+	a:focus {
+		background-color: red;
+	}*/
+	</style>
+</head>
+<body>
+
+<h1>css selector</h1>
+<p class="lead"><a href="http://naver.com/">naver</a> consectetur adipisicing elit. Aliquid at ducimus fugit dolore? Nostrum cum, quia obcaecati repudiandae. Aperiam, ullam, beatae. Reprehenderit repellat tenetur sequi laudantium sint, quaerat consequuntur velit perferendis libero explicabo. Esse architecto voluptates blanditiis laborum officia a, eaque natus? Ratione ullam consequuntur et, distinctio nesciunt rerum ex eligendi beatae recusandae, tempore vel aperiam, assumenda illo incidunt, magni laudantium eum aliquid cumque. Similique, consequatur nobis perspiciatis nesciunt at veniam rerum dignissimos ex illum commodi consectetur, hic mollitia enim. Nisi nulla harum est quia eius et sed provident! Eligendi fuga officia dolorem porro saepe, <a href="#">itaque ullam omnis perferendis voluptatibus.</a></p>
+<hr>
+<div class="sample" id="sample" style="background-color: orange;">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt neque provident deleniti pariatur veritatis corrupti nisi tempora sapiente facere debitis fugiat, sequi est perferendis ea, esse corporis, placeat optio. Ut.
+</div>
+</body>
+</html>

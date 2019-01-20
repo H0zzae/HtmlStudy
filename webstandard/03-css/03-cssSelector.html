@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector</title>
+	<style>
+	body {
+		font-size: 12px;
+	}
+	h1, p {
+		text-decoration: underline;
+	}
+	.lead {
+		color: green;
+	}
+	#lead {
+		background-color: lime;
+	}
+	#header > p {
+		border: 3px solid black;
+	}
+	#header em{
+		background-color: orange;
+	}
+	#header h1+p{
+		background-color: yellow;
+	}
+	.list li + li {
+		background-color: lightblue;
+	}
+	a[title] {
+		background-color: purple;
+		color: white;
+	}
+	a[href ^= 'http://']{
+		background-color: black;
+		color: yellow;
+	}
+	a[href $= '.pdf']{
+		background-color: yellow;
+	}
+	li[title *='sam']{/*~=는 완벽한 단어(sample)만 *=는 일부(sam)도 가능 */
+		background-color: lime;  
+	}
+	[lang |= "en"]{
+		border-bottom: 2px solid red;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>css <em>selector</em></h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae esse, tenetur beatae quia id cumque expedita sequi adipisci. Modi exercitationem ducimus a mollitia consequatur reiciendis, eveniet veritatis possimus quo voluptatem?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maiores eveniet illo unde similique excepturi dignissimos! Debitis repellendus, aliquam quaerat aut laudantium, iste quisquam voluptates ab assumenda soluta nobis adipisci.</p>
+	</div>
+	<div id="content">
+		<p id="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, deserunt!</p>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, architecto fugiat labore perferendis eum, quaerat fuga omnis aliquid beatae excepturi sint fugit necessitatibus nesciunt nihil dolores, officiis voluptatem consequuntur eius.</p>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur esse doloremque eum accusamus unde consequatur ad, aliquam cumque illum voluptates itaque atque veniam nam, aliquid optio a nemo accusantium. Laudantium.</p>
+		<ol class="list">
+			<li lang="en">Lorem ipsum dolor sit amet.</li>
+			<li lang="zh">Lorem ipsum dolor sit amet.</li>
+			<li lang="ja">Lorem ipsum dolor sit amet.</li>
+			<li>Lorem ipsum dolor sit amet.</li>
+			<li>Lorem ipsum dolor sit amet.</li>
+		</ol>
+		<ul>
+			<li><a href="http://daum.net/">daum</a></li>
+			<li><a href="http://naver.com/">naver</a></li>
+			<li><a href="mailto:help@host.co.kr" title="help mail">Help</a></li>
+			<li><a href="file/download.pdf">Download</a></li>
+			<li title="some text sample">Lorem ipsum dolor sit amet.</li>
+			<li>Lorem ipsum dolor sit amet.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, asperiores?</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis ratione totam porro. Eos ut, magnam harum fuga dolore ducimus fugit maiores! Amet accusantium perspiciatis libero nisi excepturi repudiandae cum.</p>
+	</div>
+</div>
+</body>
+</html>
