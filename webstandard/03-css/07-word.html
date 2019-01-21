@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break, white-space</title>
+	<style>
+	body{
+		font-family: 'Malgun Gothic', sans-serif;
+		font-size: 20px;
+	}
+	.content, .content2, .content3{
+		width: 500px;
+		border: 3px solid black;
+	}
+	.content p {
+		word-break: break-all;
+	}
+	.content2 p {
+		text-align: justify;
+	}
+	.content3 p {
+		text-align: justify;
+		word-break: break-all;
+	}
+	/*white-space: nowrap, pre, prewrap, pre-line;*/
+	.white1 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre;
+	}
+	.white2 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre-wrap;
+	}
+	.white3 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre-line;
+	}
+	</style>
+</head>
+<body>
+<<!-- div class="content">
+	<p>Loremipsumdolorsitamet,consecteturadipisicingelit.Iddoloresharumitaque,doloremquecorporisullamfugitquosipsamdeseruntrepellendustemporesuscipitunde!Commodivoluptateplaceat,aspernatur,reprehenderitdistinctiodoloribus!</p>
+</div>
+<div class="content2">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sint animi facilis rerum officiis dolores vel fugiat illum, dolore modi unde quam nemo ut, tempore consectetur sunt quis iste provident magnam aut numquam? Consequuntur illum commodi nostrum accusantium quidem explicabo unde recusandae, autem corporis beatae dolor quis deserunt ad ipsum, voluptas et alias at officiis cum tempora. Porro cum, dolorem explicabo, sit mollitia suscipit molestiae beatae, nisi repellendus quod debitis iure autem voluptates odio expedita fugiat? Consequatur distinctio est quidem temporibus expedita, voluptatem eveniet maxime neque quisquam sit excepturi inventore quaerat, voluptatibus libero, reiciendis laboriosam. Repellendus, quam, quis! Blanditiis, facilis.</p>
+</div>
+<div class="content3">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sint animi facilis rerum officiis dolores vel fugiat illum, dolore modi unde quam nemo ut, tempore consectetur sunt quis iste provident magnam aut numquam? Consequuntur illum commodi nostrum accusantium quidem explicabo unde recusandae, autem corporis beatae dolor quis deserunt ad ipsum, voluptas et alias at officiis cum tempora. Porro cum, dolorem explicabo, sit mollitia suscipit molestiae beatae, nisi repellendus quod debitis iure autem voluptates odio expedita fugiat? Consequatur distinctio est quidem temporibus expedita, voluptatem eveniet maxime neque quisquam sit excepturi inventore quaerat, voluptatibus libero, reiciendis laboriosam. Repellendus, quam, quis! Blanditiis, facilis.</p>
+</div -->>
+<hr>
+<div class="white1">
+	Pre
+	Lorem 
+	ipsum dolor 
+	sit amet.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ullam placeat quaerat veritatis sint, corporis, similique error temporibus voluptas id architecto aperiam cupiditate pariatur rem distinctio modi amet debitis. Beatae.
+</div>
+<div class="white2">
+	Pre-wrap
+	Lorem 
+	ipsum dolor 
+	sit amet.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio velit itaque modi fuga ducimus porro debitis deleniti, pariatur autem magni quos doloribus at, illum quo minus nulla consequatur iure nostrum.
+</div>
+<div class="white3">
+	Pre-line
+	Lorem 
+	ipsum dolor 
+	sit amet.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio velit itaque modi fuga ducimus porro debitis deleniti, pariatur autem magni quos doloribus at, illum quo minus nulla consequatur iure nostrum.
+</div>
+</body>
+</html>
