@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>font / text</title>
+	<style>
+	body , h1, h2 {/*serif 명조, sans-serif고딕, cursive필기, monospace 고정폭*/
+		/*font-family: '돋움', dotum, Helvetica, sans-serif; */
+		font-family: 'Malgun Gothic', Helvetica, sans-serif;
+		font-size: 12px;
+	}
+	h1 {
+		background-color: green;
+		font-size: 2.4em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		/*uppercase, lowercase, capitalize*/
+	}
+	h1 small{
+		background-color: lime;
+		font-size: .5em;
+		vertical-align: baseline;
+		/*top, middle, baseline, bottom*/
+	}
+	h2 {
+		color: #ff0000;
+		font-size: 2em;
+		font-variant: small-caps;
+		text-decoration: line-through;
+		/*underline, overline, line-through, none*/
+	}
+	address {/*normal, italic, oblique*/
+		font-style: normal;
+	}
+	.lead {/*bold, bolder, 600, 700, 800, 900, normal, lighter, 100, 200, 300, 400, 500*/
+		font-size: 1.2em;
+		font-weight: bold;
+		word-spacing: 1em;
+	}
+	.text {
+		text-indent: 1em;
+		text-align: left;
+		/*left, center, right, justify*/
+		line-height: 1.6em;
+		/*white-space: nowrap;*/
+	}
+	</style>
+</head>
+<body>
+
+<div id="wrap">
+	<h1>style example <small>sample</small></h1>
+	<h2>Style Example (font-variant)</h2>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, dolorum.</p>
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repudiandae quidem, unde, voluptas veniam error dolor officiis aliquam. Quisquam blanditiis amet delectus aspernatur ipsum voluptates enim porro esse magni similique, incidunt cumque architecto voluptas quibusdam ipsam culpa doloribus earum, ullam odio a, rerum quae velit. Harum optio voluptates magnam quidem quo officiis tempore culpa minus, ea animi iste, asperiores, dolores aspernatur reprehenderit, tempora. Quia labore natus vitae officia accusantium! Voluptatibus eius a aut quam, veritatis odit asperiores enim quisquam, veniam illo temporibus debitis dolorem beatae ab perspiciatis assumenda tenetur fugit ea et minima maiores. Cupiditate ipsam nulla aspernatur doloribus soluta.</p>
+	<hr>
+	<address>add : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, placeat!</address>
+</div>
+	
+</body>
+</html>
