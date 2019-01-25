@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Boxmodels</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	} /*스타일의 초기화*/
+	/*
+	boxmodels
+		content width / height
+		border 
+		padding
+		margin
+
+	*/
+	.box {
+		display: block;
+		/*display: inline-block;*/
+
+		margin: 20px;
+		padding: 20px;
+		/*padding-top: 200px;  top, right, left, bottom*/
+		/*padding: 100px 50px;*/  /*top bottom | right left*/
+		/*padding: 100px 50px 10px;*/  /*top | right left | bottom*/
+		/*padding: 100px 50px 10px 0;*/  /*top | right | bottom | left*/
+		
+		/*border-style : solid | dashed | dotted | double | inset | outset | ridge | groove;*/
+		/*border-color :*/
+		/*border-width :*/
+		border: 5px solid black;
+		border-style: double;
+		background-color: lime;
+	}
+/*	.box3 {
+		box-sizing: border-box; /*css3 <- IE8, 7, ....(X)
+	}*/
+	</style>
+</head>
+<body>
+	
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus sed accusantium ad dolor fugit facilis unde, labore odit totam natus beatae error sapiente illum, ducimus aut quasi ea nisi.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus sed accusantium ad dolor fugit facilis unde, labore odit totam natus beatae error sapiente illum, ducimus aut quasi ea nisi.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus sed accusantium ad dolor fugit facilis unde, labore odit totam natus beatae error sapiente illum, ducimus aut quasi ea nisi.
+</div>
+<span class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, laboriosam. Aut deleniti nihil ipsum consequatur delectus cumque ipsam numquam? Quaerat sapiente itaque pariatur. Laudantium iste quasi animi eveniet sunt tempora?
+</span>
+
+</body>
+</html>
