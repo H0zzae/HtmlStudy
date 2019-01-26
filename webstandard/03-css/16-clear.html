@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>clear</title>
+	<style>
+	img {
+		vertical-align: top;
+	}
+	.area {
+		width: 800px;
+		margin: 0 auto;
+		border: 3px dashed red;
+		*zoom: 1; /*IE6, IE7 Hack*/
+	}
+	.area:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.area .thumb {
+		float: left;
+		border: 3px solid black;
+	}
+	.cls {
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	
+<div class="area">
+	<div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+	<!-- clear 위치 -->
+</div>
+<p class="cls">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis assumenda rem tempora fugit vel, reiciendis illo blanditiis velit quos, natus ratione veritatis, nemo modi qui delectus exercitationem libero alias quisquam impedit labore. Odio modi dolor ad distinctio qui porro, rem sequi ratione, officiis laudantium sint commodi adipisci ullam labore temporibus, aut voluptates aliquid dolore deserunt suscipit. Labore ea, quis! A asperiores distinctio temporibus doloremque reiciendis! Minus deserunt quaerat sequi debitis magnam sint, earum in quis enim, a qui repellendus obcaecati nobis sunt inventore. At, dolorem! Laboriosam delectus ullam id atque voluptates, nostrum hic ipsa reprehenderit consequatur culpa, mollitia nobis?</p>
+</body>
+</html>
