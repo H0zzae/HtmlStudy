@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>검색어</title>
+
+</head>
+<body>
+   <div class="searchArea">
+   	<a id = "logo">logo</a>
+   	<div id = "search">search</div>
+      <button id="searchButton">검색뀨
+         <span id="searchIcon">아이콘뀨</span>
+      </button>
+   </div>
+</body>
+</html>
+<style>
+   /* reset */
+html, body {width: 100%;height: 100%}
+body,h1,h2,h3,h4,ul,li,p {margin: 0;padding: 0}
+body,h1,h2,h3,h4,th,td {font-family: 'Malgun Gothic','맑은 고딕',sans-serif; font-size: 12px}
+li {list-style: none}
+em {font-style: normal}
+img {vertical-align: top}
+table {border-collapse: collapse}
+a {text-decoration: none}
+a:hover, a:focus {text-decoration: underline}
+/*caption {position: absolute; left: 0; top: -99999em; font-size: 0; line-height: 0}*/
+caption {display: none;}
+
+/* style */
+.searchArea {
+   position: relative;
+   margin: 0;
+   padding: 0;
+   width: 1080px;
+   height: 130px;
+}
+div #logo {
+   top: 50%;
+   left: 2px;
+   margin-top: -25px;
+   position: absolute;
+   display: block;
+   height: 48px;
+   width: 198px;
+   background: url(sp_search.png) no-repeat -4px -4px;
+   text-indent: -99999px;
+}
+div #search {
+   position: absolute;
+   top: 50%;
+   left: 223px;
+   margin-top: -20px;
+   height: 45px;
+   width: 517px;
+   border: 2px solid #03cf5d;
+   text-indent: -99999px;
+}
+div #searchButton {
+   position: absolute;
+   width: 49px;
+   height: 49px;
+   top: 50%;
+   left: 695px;
+   margin-top: -20px;
+   background: #03cf5d;
+   border: none;
+   text-indent: -99999px;
+}
+div #searchButton #searchIcon {
+   position: absolute;
+   top: 14px;
+   left: 14px;
+   width: 21px;
+   height: 21px;
+   background: url(sp_search.png) no-repeat -4px -60px;
+}
+</style>
