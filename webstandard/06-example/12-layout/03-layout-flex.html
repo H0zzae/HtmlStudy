@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout, 2column</title>
+	<style>
+	/* reset */
+	html, body {width: 100%;height: 100%}
+	body,h1,h2,h3,h4,ul,li,p {margin: 0;padding: 0}
+	body,h1,h2,h3,h4,th,td {font-family: 'Malgun Gothic','맑은 고딕',sans-serif; font-size: 12px}
+	li {list-style: none}
+	em {font-style: normal}
+	img {vertical-align: top}
+	table {border-collapse: collapse}
+	a {text-decoration: none}
+	a:hover, a:focus {text-decoration: underline}
+	/*caption {position: absolute; left: 0; top: -99999em; font-size: 0; line-height: 0}*/
+	caption {display: none;}
+
+	/* sytle */
+	#wrap {background-color: gray;}
+	#header {padding: 20px; background-color: red;}
+	#container {padding-bottom: 30px; background-color: lime; *zoom:1;}
+	#container:after {content: ''; display: block; clear: both}
+	#container #content {float: right; width:62%; background-color: blue;}
+	#container #content .inn {padding:20px;}
+	#container .aside {float: left; width: 38%; background-color: green;}
+	#container .aside .inn {padding: 20px;}
+	#footer {padding:20px; background-color: silver;}
+
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<h1>LOGO</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolore deserunt laboriosam, perferendis quia earum quam accusamus consequuntur explicabo modi debitis placeat eveniet blanditiis esse incidunt commodi assumenda. Enim, repellendus.</p>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+		<div class="inn">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia modi non maxime reiciendis amet ab temporibus. Ratione aliquid illo, natus, architecto minima saepe cupiditate autem? Cumque tenetur ex aperiam, dolorem beatae, est iste incidunt quaerat delectus nobis error dignissimos numquam, voluptatem, necessitatibus exercitationem at sunt quidem voluptatibus nam facilis veniam. Aliquam corrupti, sunt at quam, nisi non delectus earum, itaque, quo voluptatum laborum eveniet. Veritatis, harum. Consectetur similique deleniti, et rem voluptatum aliquid, sit aspernatur. Error laborum aliquam placeat, possimus officia nulla molestias dolorum laboriosam aperiam accusantium eveniet voluptatem voluptatum tempora voluptate, a, ad explicabo consequatur nisi quia quas! Excepturi.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia modi non maxime reiciendis amet ab temporibus. Ratione aliquid illo, natus, architecto minima saepe cupiditate autem? Cumque tenetur ex aperiam, dolorem beatae, est iste incidunt quaerat delectus nobis error dignissimos numquam, voluptatem, necessitatibus exercitationem at sunt quidem voluptatibus nam facilis veniam. Aliquam corrupti, sunt at quam, nisi non delectus earum, itaque, quo voluptatum laborum eveniet. Veritatis, harum. Consectetur similique deleniti, et rem voluptatum aliquid, sit aspernatur. Error laborum aliquam placeat, possimus officia nulla molestias dolorum laboriosam aperiam accusantium eveniet voluptatem voluptatum tempora voluptate, a, ad explicabo consequatur nisi quia quas! Excepturi.</p>
+		</div>
+		</div>
+		<!-- //content -->
+		<!-- aside -->
+		<div class="aside">
+		<div class="inn">
+			<h2>Aside</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ullam facere facilis consequuntur dignissimos fuga dolorem animi in placeat quae, ut corporis beatae nulla eos voluptatem laudantium eum aspernatur molestias.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ex quas maiores, fugit modi odio, expedita. Laudantium odit, odio dolores pariatur autem labore error asperiores doloremque, voluptatum illum porro similique. Veritatis ea magni perferendis nobis laboriosam dolorum modi itaque nesciunt eius omnis neque delectus, quo debitis sunt explicabo, maiores repellat quidem fuga. Ullam corporis consectetur tenetur, libero animi soluta numquam doloribus ipsam non asperiores totam nostrum eos, accusantium nisi voluptas reiciendis dolorum nam expedita ducimus est amet laborum ipsum nihil? Voluptate fugiat ex, cupiditate? Totam eaque praesentium minus ipsa dignissimos ad vel quaerat. Quia, vero eaque temporibus voluptatem delectus beatae.</p>
+		</div>
+		</div>
+		<!-- //aside -->
+	</div>
+	<!-- //contatiner -->
+	<!-- footer -->
+	<div id="footer">
+		<address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iste!</address>
+		<p>Copyright &copy;</p>
+	</div>
+	<!-- //footer -->
+</div>
+</body>
+</html>
