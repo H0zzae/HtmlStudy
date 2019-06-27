@@ -5,26 +5,26 @@
 </head>
 <body>
 	<div id="topDiv">
+		<img src="image/97ec80a681e94540414daf2fb855ba3b.svg" alt="logo">
 		<ul id="leftTop">
-			<li id="papagoLogo"><a href="#">파파고</a></li>
-			<li id="WebSiteTranslate"><a href="#">웹사이트 번역</a></li>
-			<li id="GYM"><a href="#">GYM</a></li>
-			<hr id="vertical">
-			<li id="Dictionary"><a href="#">사전</a></li>
+			<li id="leftMenu">
+				<a href="#" id="webSiteTranslate">웹사이트 번역</a>
+				<a href="#" id="GYM">GYM</a>
+				<hr id="vertical">
+				<a href="#" id="dictionary">사전</a>
+			</li>
 		</ul>
 		<ul id="rightTop">
 			<li id="smallWinTrans"><a href="#">작은창번역</a></li>
 			<li id="favorite"><a href="#">즐겨찾기</a></li>
 			<li id="setting"><a href="#">설정</a></li>
 			<hr id="vertical">
-			<li id="mypage">
-				<a href="profile">
-					<span href="#" id="profile">프로필사진</span>
-					<span href="#" id="username">유저네임</span>
-				</a>
-				<span id="triangle">세모</span>	
-			</li>
-			<li id="menu"><a href="#">메뉴</a></li>
+			<ul id="mypage">
+				<li href="#" id="picture">사진</li>
+				<li href="#" id="username">이름</li>
+				<span id="triangle"></span>	
+			</ul>
+			<li id="menu"><a href="#"></a></li>
 		</ul>
 	</div>
 	<hr>
@@ -33,18 +33,116 @@
 <style>
 	/*reset*/
 	html,body{width: 100%;height: 100%}
-	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin:0; padding:0;}
-	body,input,textarea,select,button,table {font-family:'나눔고딕',NanumGothic,Malgun Gothic,'돋움',Dotum,helvetica,arial,sans-serif; font-size:12px;}
+	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,ul,li {margin:0; padding:0;}
+	body,input,textarea,select,button,table {font-family:"맑은 고딕",Malgun Gothic,NanumGothic,'돋움',Dotum,helvetica,arial,sans-serif; font-size:12px;line-height: 1.25em;}
 	img,fieldset {border:0}
 	img{vertical-align: top}
 	ul,ol {list-style:none;}
 	em,address {font-style:normal;}
-	a {text-decoration:none;}
-	a:hover,a:active,a:focus {text-decoration:underline;}
+	a {text-decoration:none; color:#000;}
+	a:hover,a:active,a:focus {text-decoration:none;}
 	
 	/*style*/
 	#topDiv{
 		height: 74px;
 		margin: 0 32px 0 32px;
+		position: relative;
 	}
+	#topDiv img {
+		float: left;
+		margin: 20px 0 0 0;
+	}
+	#topDiv #vertical {
+		display: none;
+		/*display: inline-block;*/
+		width: 0px;
+		height: 10px;
+	}
+	#topDiv #leftTop{
+		float: left;
+		display: inline-block;
+		height: 100%;
+		font-size: 17px;
+	}
+	#topDiv #leftTop #logo {
+		display: inline-block;
+		width: 123px;
+		margin: 20px 0 0 0 ;
+	}
+	#topDiv #leftTop #leftMenu {
+		display: inline-block;
+		margin: 25px 0 0 30px;
+		font: color:#000;
+		line-height: 20px;
+		letter-spacing: -0.6px;
+	}
+	#topDiv #leftTop #webSiteTranslate {
+		margin-right: 15px;
+	}
+	#topDiv #leftTop #GYM{
+		font-size: 18px;
+	}
+	#topDiv #leftTop #dictionary{
+
+	}
+	#topDiv #rightTop {
+		float: right;
+		display: inline-block;
+		height: 100%;
+	}
+	#topDiv #rightTop li {
+		display: inline-block;
+	}
+	#topDiv #rightTop #smallWinTrans{
+		text-indent: -9999px;
+		background: url(./image/269ba47952d316345f1be72ab66fd7ba.png) no-repeat ;
+		background-size: 100%;
+		width: 30px;
+		height: 30px;
+		margin-top: 20px;
+
+	}
+	#topDiv #rightTop #favorite{
+		text-indent: -9999px;
+		background: url(./image/634901381a7f01d7115707ffa872ae8c.png) no-repeat;
+		background-size: 100%;
+		width: 30px;
+		height: 30px;
+		margin-top: 20px;
+	}
+	#topDiv #rightTop #setting{
+		text-indent: -9999px;
+		background: url(./image/b0117c1148b0a13cec3da4c119855b3b.png)no-repeat;
+		background-size: 100%;
+		width: 30px;
+		height: 30px;
+		margin-top: 20px;
+	}
+	#topDiv #rightTop #mypage{
+		text-indent: -9999px;
+	}
+	#mypage #profile {
+		background: url(./image/ico_arrow_bl1.gif) no-repeat;
+		width: 10px;
+		height: 8px;
+	}
+	#profile #picture{
+		border-radius: 16px;
+		background: url(./image/myInfo.gif) no-repeat;
+		background-size: 100%;
+		width: 16px;
+		height: 16px;
+	}
+	#topDiv #rightTop #mypage #profile #username{}
+	#topDiv #rightTop #menu{
+		width: 16px;
+		height: 16px;
+		margin-top: 20px;
+	}
+	#topDiv #rightTop #menu a{
+		text-indent: -9999px;
+		background: url(./image/sp_gnb_v14.png) no-repeat -32px -130px;
+		
+	}
+
 </style>
