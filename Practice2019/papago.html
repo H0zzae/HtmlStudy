@@ -10,7 +10,7 @@
 			<li id="leftMenu">
 				<a href="#" id="webSiteTranslate">웹사이트 번역</a>
 				<a href="#" id="GYM">GYM</a>
-				<hr id="vertical">
+				<div id="vertical1"></div>
 				<a href="#" id="dictionary">사전</a>
 			</li>
 		</ul>
@@ -18,7 +18,6 @@
 			<li id="smallWinTrans"><a href="#">작은창번역</a></li>
 			<li id="favorite"><a href="#">즐겨찾기</a></li>
 			<li id="setting"><a href="#">설정</a></li>
-			<hr id="vertical">
 			<ul id="mypage">
 				<li href="#" id="picture">사진</li>
 				<li href="#" id="username">이름</li>
@@ -26,37 +25,74 @@
 			</ul>
 			<li id="menu"><a href="#"></a></li>
 		</ul>
+		<div id="vertical2"></div>
 	</div>
-	<hr>
+	<div id="hr"></div>
+	<div id="translate">
+		<div id="origin">
+			<button id="languageSelect">
+				<span id="languageSpan">언어감지</span>
+				<button id="arrowdown">더보기</button>
+			</button>
+			<button id="languageChange">change</button>
+			<textarea id="originText" placeholder="번역할 내용을 입력하세요."></textarea> 
+			<div id="select">
+				<button id="listen">발음듣기</button>
+				<button id="copy">복사하기</button>
+				<button id="translateButton">번역하기</button>
+			</div>
+		</div>
+
+		<div id="trans">
+			
+		</div>
+		<div id="autoComplete">
+			
+		</div>
+	</div>
 </body>
 </html>
 <style>
 	/*reset*/
 	html,body{width: 100%;height: 100%}
 	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,ul,li {margin:0; padding:0;}
-	body,input,textarea,select,button,table {font-family:"맑은 고딕",Malgun Gothic,NanumGothic,'돋움',Dotum,helvetica,arial,sans-serif; font-size:12px;line-height: 1.25em;}
+	body,input,textarea,select,button,table {font-family:Noto Sans,Noto Sans JP,Noto Sans KR,Helvetica,Microsoft YaHei,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,Dotum,돋움,sans-serif; font-size:12px;line-height: 1.25em;}
 	img,fieldset {border:0}
 	img{vertical-align: top}
 	ul,ol {list-style:none;}
 	em,address {font-style:normal;}
 	a {text-decoration:none; color:#000;}
 	a:hover,a:active,a:focus {text-decoration:none;}
-	
+	button{border: none;margin: 0;padding: 0;width: auto;background: transparent;text-align: inherit;outline: none;-webkit-tap-highlight-color: rgba(0,0,0,.05);}
+	textarea{border: none;margin: 0;padding: 0;background-color: transparent;resize: none;outline: none;}
+
 	/*style*/
 	#topDiv{
 		height: 74px;
 		margin: 0 32px 0 32px;
 		position: relative;
 	}
+	#hr {
+		border-bottom: #e5e5e5 1px solid;
+	}
 	#topDiv img {
 		float: left;
 		margin: 20px 0 0 0;
 	}
-	#topDiv #vertical {
-		display: none;
-		/*display: inline-block;*/
-		width: 0px;
-		height: 10px;
+	#topDiv #vertical1 {
+		display: inline-block;
+		border-right: #e5e5e5 1px solid;
+		margin: 0px 12px -1px 12px;
+		width: 1px;
+		height: 14px;
+	}
+	#topDiv #vertical2 {
+		float: right;
+		display: inline-block;
+		border-right: #e5e5e5 1px solid;
+		margin: 25px -145px 0px 0px;
+		width: 1px;
+		height: 18px;
 	}
 	#topDiv #leftTop{
 		float: left;
@@ -71,13 +107,13 @@
 	}
 	#topDiv #leftTop #leftMenu {
 		display: inline-block;
-		margin: 25px 0 0 30px;
-		font: color:#000;
+		margin: 26px 0 0 30px;
+		color:#000;
 		line-height: 20px;
 		letter-spacing: -0.6px;
 	}
 	#topDiv #leftTop #webSiteTranslate {
-		margin-right: 15px;
+		margin-right: 18px;
 	}
 	#topDiv #leftTop #GYM{
 		font-size: 18px;
@@ -100,6 +136,7 @@
 		width: 30px;
 		height: 30px;
 		margin-top: 20px;
+		margin-right: 15px;
 
 	}
 	#topDiv #rightTop #favorite{
@@ -109,6 +146,7 @@
 		width: 30px;
 		height: 30px;
 		margin-top: 20px;
+		margin-right: 15px;
 	}
 	#topDiv #rightTop #setting{
 		text-indent: -9999px;
@@ -144,5 +182,83 @@
 		background: url(./image/sp_gnb_v14.png) no-repeat -32px -130px;
 		
 	}
+	hr{
+		margin: 0px;
+		color: #e5e5e5;
+	}
+	#translate {
+		padding: 56px 32px 80px;
+		display: inline-block;
+	}
+	#translate #origin {
+		position: relative;
+		display: inline-block;
+		height: 332px;
+		border: #e5e5e5 1px solid;
+		margin-left: 4px;
+	}
+	#translate #origin #languageSelect {
+		font-size: 18px;
+		margin-right: 5px;
+		height: 52px;
+		color: #3c3c3c;
+		padding: 0 3px 0 23px;
+	}
+	#translate #origin #languageSelect #languageSpan {
 
+	}
+	#translate #origin #arrowdown {
+		text-indent: -99999px;
+		width: 9px;
+		height: 9px;
+		border: #666 solid;
+		border-width: 0 1px 1px 0;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		margin-top: -3px; 
+	}
+	#translate #origin #languageChange {
+		float: right;
+		text-indent: -99999px;
+		background: url(./image/4d31b24d041c26615b62b1dc88263316.png) 50% 50% no-repeat;
+		background-size: 23px 20px;
+		width: 64px;
+		height: 52px;
+	}
+	#translate #origin #originText {
+		height: 135px;
+		width: 100%;
+		padding: 28px 20px 63px;
+		border-top: #e5e5e5 1px solid;
+		border-bottom: #e5e5e5 1px solid; 
+		font-size: 30px;
+	}
+	#translate #origin 
+	#translate #origin #select button#listen {
+		text-indent: -99999px;
+		background: url(./image/b71a5900bb1edf3461991e3a8ddc2563.png) no-repeat;
+		background-size: 30px 30px;
+		width:80px;
+		height: 62px;
+	}	
+	#translate #origin #copy {
+		text-indent: -99999px;
+		background: url(./image/1d3b8fbb2d21e42b516c98ff0ec3e711.png) 50% 50% no-repeat;
+		background-size: 30px 30px;
+		width:80px;
+		height: 62px;
+	}
+	#translate #origin #translateButton {
+		float: right;
+		height: 63px;
+		width: 134px;
+		color: #fff;
+		text-align: center;
+		background-color: #21dc6d;
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: 2px;
+		font-size: 20px;
+		font-weight: 700;
+		text-shadow: 0 0 0 rgba(0,0,1,0.15);
+	}
 </style>
